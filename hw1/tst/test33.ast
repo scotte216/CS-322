@@ -1,0 +1,10 @@
+# AST1 Program
+  Func void main ()
+   Assign a (NewArray IntType 2) 
+   Assign (ArrayElm a 0) (Binop + 1 (Binop * (Unop - 2) 3)) 
+   Assign flag (Binop && true (Binop < (ArrayElm a 0) 0)) 
+   If flag 
+    Assign (ArrayElm a 1) (ArrayElm a 0) 
+   Else
+    Assign (ArrayElm a 1) 0
+   Print (ArrayElm a 1) 

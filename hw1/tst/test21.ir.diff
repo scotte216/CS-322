@@ -1,0 +1,16 @@
+5,10c5,12
+<  x = 9
+<  t1 = -5
+<  t2 = t1 + 2
+<  y = t2
+<  t3 = x - y
+<  call _printInt(t3)
+---
+>  t1 = 2 * 4
+>  t2 = 1 + t1
+>  x = t2
+>  t3 = -5
+>  t4 = t3 + 2
+>  y = t4
+>  t5 = x - y
+>  call _printInt(t5)

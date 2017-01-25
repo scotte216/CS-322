@@ -1,0 +1,32 @@
+8,17c8,21
+<  t2 = b + 0
+<  [t2] = 3
+<  t3 = b + 4
+<  [t3] = 4
+<  t4 = b + 4
+<  t5 = [t4]
+<  call _printInt(t5)
+<  t6 = b + 0
+<  t7 = [t6]
+<  return t7
+---
+>  t2 = 0 * 4
+>  t3 = b + t2
+>  [t3] = 3
+>  t4 = 1 * 4
+>  t5 = b + t4
+>  [t5] = 4
+>  t6 = 1 * 4
+>  t7 = b + t6
+>  t8 = [t7]
+>  call _printInt(t8)
+>  t9 = 0 * 4
+>  t10 = b + t9
+>  t11 = [t10]
+>  return t11
+22,23c26,27
+<  t8 = call _go()
+<  call _printInt(t8)
+---
+>  t12 = call _go()
+>  call _printInt(t12)

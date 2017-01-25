@@ -1,0 +1,24 @@
+6c6
+< 	subq $24,%rsp
+---
+> 	subq $28,%rsp
+26c26
+< 	addq  $24,%rsp
+---
+> 	addq $28,%rsp
+32c32
+< 	subq $36,%rsp
+---
+> 	subq $28,%rsp
+55c55
+< 	addq  $36,%rsp
+---
+> 	addq $28,%rsp
+61c61
+< 	subq $40,%rsp
+---
+> 	subq $24,%rsp
+77c77
+< 	addq  $40,%rsp
+---
+> 	addq $24,%rsp

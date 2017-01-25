@@ -1,0 +1,5 @@
+# AST1 Program
+  Func void main ()
+   Assign x (Binop + 1 (Binop * 2 4))
+   Assign y (Binop + (Unop - 5) 2)
+   Print (Binop - x y)

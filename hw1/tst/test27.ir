@@ -1,0 +1,9 @@
+# IR1 Program
+
+_main ()
+{
+ b = false
+ x = 1
+ call _printInt(x)
+ return 
+}

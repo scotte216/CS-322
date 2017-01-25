@@ -1,0 +1,8 @@
+# IR1 Program
+
+_main ()
+{
+ x = 1
+ call _printInt(x)
+ return 
+}

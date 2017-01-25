@@ -1,0 +1,16 @@
+6c6
+< 	subq $12,%rsp
+---
+> 	subq $60,%rsp
+59c59
+< 	addq  $12,%rsp
+---
+> 	addq $60,%rsp
+65c65
+< 	subq $4,%rsp
+---
+> 	subq $12,%rsp
+73c73
+< 	addq  $4,%rsp
+---
+> 	addq $12,%rsp

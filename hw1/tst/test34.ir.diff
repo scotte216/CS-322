@@ -1,0 +1,38 @@
+11,22c11,20
+<  t5 = a + 0
+<  [t5] = t4
+<  t9 = false
+<  if flag == false goto L0
+<  t6 = a + 0
+<  t7 = [t6]
+<  t8 = t7 < 0
+<  t9 = t8
+< L0:
+<  if t9 == false goto L1
+<  t10 = a + 4
+<  [t10] = 4
+---
+>  t5 = 0 * 4
+>  t6 = a + t5
+>  [t6] = t4
+>  t7 = false
+>  if flag == false goto L1
+>  t8 = 0 * 4
+>  t9 = a + t8
+>  t10 = [t9]
+>  t11 = t10 < 0
+>  t7 = t11
+24,26c22,30
+<  t11 = a + 4
+<  t12 = [t11]
+<  call _printInt(t12)
+---
+>  if t7 == false goto L0
+>  t12 = 1 * 4
+>  t13 = a + t12
+>  [t13] = 4
+> L0:
+>  t14 = 1 * 4
+>  t15 = a + t14
+>  t16 = [t15]
+>  call _printInt(t16)

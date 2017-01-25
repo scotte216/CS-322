@@ -1,0 +1,11 @@
+5a6,10
+>  t1 = true
+>  if true == true goto L1
+>  t1 = b
+> L1:
+>  if t1 == false goto L0
+6a12,15
+>  goto L2
+> L0:
+>  x = 2
+> L2:

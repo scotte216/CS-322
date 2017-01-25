@@ -1,0 +1,20 @@
+7c7
+<  t3 = true
+---
+>  t2 = true
+9,13c9,13
+<  if t1 == true goto L0
+<  t2 = b > 0
+<  t3 = t2
+< L0:
+<  if t3 == false goto L1
+---
+>  if t1 == true goto L1
+>  t3 = b > 0
+>  t2 = t3
+> L1:
+>  if t2 == false goto L0
+16c16
+< L1:
+---
+> L0:

@@ -1,0 +1,14 @@
+# IR1 Program
+
+_go ()
+{
+ call _printInt(1)
+ return 6
+}
+
+_main ()
+{
+ t1 = call _go()
+ call _printInt(t1)
+ return 
+}

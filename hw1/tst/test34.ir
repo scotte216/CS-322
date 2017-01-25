@@ -1,0 +1,28 @@
+# IR1 Program
+
+_main ()
+{
+ t1 = call _malloc(8)
+ a = t1
+ flag = true
+ t2 = -2
+ t3 = t2 * 3
+ t4 = 1 + t3
+ t5 = a + 0
+ [t5] = t4
+ t9 = false
+ if flag == false goto L0
+ t6 = a + 0
+ t7 = [t6]
+ t8 = t7 < 0
+ t9 = t8
+L0:
+ if t9 == false goto L1
+ t10 = a + 4
+ [t10] = 4
+L1:
+ t11 = a + 4
+ t12 = [t11]
+ call _printInt(t12)
+ return 
+}

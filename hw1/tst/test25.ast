@@ -1,0 +1,8 @@
+# AST1 Program
+  Func void main ()
+   Assign b false
+   If (Binop || true b) 
+    Assign x 1 
+   Else
+    Assign x 2 
+   Print x

@@ -1,0 +1,5 @@
+4a5,6
+>  t1 = 3 > 0
+>  if t1 == false goto L0
+5a8
+> L0:

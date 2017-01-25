@@ -1,0 +1,6 @@
+# AST1 Program
+  Func void main ()
+   Assign x (Binop && (Binop == 1 1) (Binop > 2 4))
+   Assign y (Binop && (Binop != 2 2) x)
+   Print x
+   Print y

@@ -1,0 +1,10 @@
+# IR1 Program
+
+_main ()
+{
+ x = true
+ y = 6
+ call _printInt(x)
+ call _printInt(y)
+ return 
+}

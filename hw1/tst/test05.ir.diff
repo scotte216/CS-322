@@ -1,0 +1,54 @@
+9,20c9,42
+<  t2 = a + 4
+<  [t2] = 2
+<  b = true
+<  t3 = -3
+<  t4 = -t3
+<  t5 = a + 4
+<  t6 = [t5]
+<  t7 = 10 * t6
+<  t8 = t4 + t7
+<  t9 = i * 2
+<  t10 = t8 + t9
+<  i = t10
+---
+>  t2 = 1 * 4
+>  t3 = a + t2
+>  [t3] = 2
+>  t11 = true
+>  t5 = true
+>  t4 = 1 < 2
+>  if t4 == true goto L0
+>  t7 = false
+>  t6 = 3 > 4
+>  if t6 == false goto L1
+>  t8 = 7 * 8
+>  t9 = 6 + t8
+>  t10 = 5 == t9
+>  t7 = t10
+> L1:
+>  t5 = t7
+> L0:
+>  if t5 == true goto L2
+>  t12 = !true
+>  t11 = t12
+> L2:
+>  b = t11
+>  t13 = -3
+>  t14 = -t13
+>  t15 = 5 * 4
+>  t16 = t15 / 2
+>  t17 = 1 * 4
+>  t18 = a + t17
+>  t19 = [t18]
+>  t20 = t16 * t19
+>  t21 = t14 + t20
+>  t22 = i * 2
+>  t23 = t21 + t22
+>  i = t23
+27,28c49,50
+<  t11 = call _go()
+<  call _printInt(t11)
+---
+>  t24 = call _go()
+>  call _printInt(t24)
